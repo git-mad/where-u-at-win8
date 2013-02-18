@@ -16,17 +16,17 @@
     <AppXManifest Include="C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-02-12T00:42:56.476</Modified>
+      <Modified>2013-02-16T18:04:59.413</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\bin\Debug\WhereUAt.exe">
       <PackagePath>WhereUAt.exe</PackagePath>
-      <Modified>2013-02-12T00:42:55.445</Modified>
+      <Modified>2013-02-16T18:04:58.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\bin\Debug\WhereUAt.pdb">
       <PackagePath>WhereUAt.pdb</PackagePath>
-      <Modified>2013-02-12T00:42:55.412</Modified>
+      <Modified>2013-02-16T18:04:58.685</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\AppData\Local\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Bing.Maps.Xaml\1.0\References\commonconfiguration\neutral\Bing.Maps.winmd">
       <PackagePath>Bing.Maps.winmd</PackagePath>
@@ -378,7 +378,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\bin\Debug\ResultsPage.xaml">
       <PackagePath>ResultsPage.xaml</PackagePath>
-      <Modified>2013-02-11T23:57:29.377</Modified>
+      <Modified>2013-02-16T18:04:57.087</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

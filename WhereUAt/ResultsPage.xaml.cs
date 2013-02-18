@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 //using Bing.Maps;
 using System.Net;
+using Bing.Maps;
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
 namespace WhereUAt
@@ -44,8 +45,18 @@ namespace WhereUAt
             Geolocator geo = new Geolocator();
           //  Bing.Maps.Location location = new Location();
             Geoposition position = await geo.GetGeopositionAsync();
-        
 
+            //Setting map view
+            Bing.Maps.Location location = new Bing.Maps.Location(position.Coordinate.Latitude, position.Coordinate.Longitude);
+            
+
+            //Putting pushpin at location
+            Pushpin p = new Pushpin();
+            MapLayer.SetPosition(p, location);
+            map.Children.Add(p);
+
+            map.ZoomLevel = 15;
+            map.SetView(location);
             resultsBlock.Text = "Location: " + position.Coordinate.Latitude + " , " + position.Coordinate.Longitude;
 
         }
@@ -59,5 +70,59 @@ namespace WhereUAt
         protected override void SaveState(Dictionary<String, Object> pageState)
         {
         }
+
+        private void RadioButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            RadioButton clicked = (RadioButton)sender;
+            if (clicked.Content as String == "Street")
+                map.MapType = MapType.Road;
+            if (clicked.Content as String == "Satellite")
+            {
+                map.MapType = MapType.Aerial;
+            }
+            if (clicked.Content as String == "Hybrid")
+            {
+                map.MapType = MapType.Birdseye;
+            }
+        }
+
+     
+
+        private void map_DoubleTapped_1(object sender, TappedRoutedEventArgs e)
+        {
+            Point clickedAt = e.GetPosition(sender as UIElement);
+            Location clickedLocation;
+            map.TryPixelToLocation(clickedAt, out clickedLocation);
+            Pushpin p = new Pushpin();
+            p.Name="Clicked Here";
+            MapLayer.SetPosition(p, clickedLocation);
+            map.Children.Add(p);
+            
+
+
+        }
+
+        private void ToggleSwitch_Toggled_1(object sender, RoutedEventArgs e)
+        {
+            map.ShowTraffic = (sender as ToggleSwitch).IsOn;
+           
+        }
+
+        private void ToggleSwitch_Toggled_2(object sender, RoutedEventArgs e)
+        {
+            map.ShowBreadcrumb = (sender as ToggleSwitch).IsOn;
+
+        }
+
+        private async void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Geolocator geo2 = new Geolocator();
+            Geoposition position = await geo2.GetGeopositionAsync();
+            Location location = new Location(position.Coordinate.Latitude, position.Coordinate.Longitude);
+            map.SetView(location);
+        }
+
+
+      
     }
 }
