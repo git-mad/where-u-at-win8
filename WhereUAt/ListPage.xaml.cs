@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using Windows.Foundation;
@@ -20,9 +20,11 @@ namespace WhereUAt
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
     /// </summary>
-    public sealed partial class HomePage : WhereUAt.Common.LayoutAwarePage
+    public sealed partial class ListPage : WhereUAt.Common.LayoutAwarePage
     {
-        public HomePage()
+        ObservableCollection<String> collection = new ObservableCollection<string>();
+        ObservableCollection<City> cityCollection = new ObservableCollection<City>();
+        public ListPage()
         {
             this.InitializeComponent();
         }
@@ -38,6 +40,15 @@ namespace WhereUAt
         /// session.  This will be null the first time a page is visited.</param>
         protected override void LoadState(Object navigationParameter, Dictionary<String, Object> pageState)
         {
+         /*   collection.Add("New York");
+            collection.Add("Moscow");
+            collection.Add("London");
+            collection.Add("Paris");
+            collection.Add("Singapore");
+            listView.ItemsSource = collection;*/
+            cityCollection.Add(new City() { name = "New York", continent = "North America" });
+            listView.ItemsSource = cityCollection;
+
         }
 
         /// <summary>
@@ -48,18 +59,6 @@ namespace WhereUAt
         /// <param name="pageState">An empty dictionary to be populated with serializable state.</param>
         protected override void SaveState(Dictionary<String, Object> pageState)
         {
-        }
-
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {  
-            Debug.WriteLine("Switching pages");
-            this.Frame.Navigate(typeof(ResultsPage));   
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(ListPage));
         }
     }
 }

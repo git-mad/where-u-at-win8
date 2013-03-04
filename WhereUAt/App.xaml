@@ -13,6 +13,9 @@
                     Required by Visual Studio project and item templates
                  -->
                 <ResourceDictionary Source="Common/StandardStyles.xaml"/>
+                <ResourceDictionary>
+                    <x:String x:Key="ApiKey">An7YFWgFf8yiMsYq3JyjFvxNIaqYKWzD2dra2JgZO8dVqPuSamWUPJbsdkckX2Gr</x:String>
+                </ResourceDictionary>
                
             </ResourceDictionary.MergedDictionaries>
 

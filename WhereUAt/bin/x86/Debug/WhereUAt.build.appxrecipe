@@ -281,6 +281,9 @@
     <AppxPackagedFile Include="C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\bin\x86\Debug\HomePage.xaml">
       <PackagePath>HomePage.xaml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\bin\x86\Debug\ListPage.xaml">
+      <PackagePath>ListPage.xaml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\bin\x86\Debug\ResultsPage.xaml">
       <PackagePath>ResultsPage.xaml</PackagePath>
     </AppxPackagedFile>

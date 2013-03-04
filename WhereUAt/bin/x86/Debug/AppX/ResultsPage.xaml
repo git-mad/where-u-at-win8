@@ -83,13 +83,13 @@
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="resultsBlock" Grid.RowSpan="2" HorizontalAlignment="Left"  Grid.Row="0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"  FontSize="48"/>
 
-            <Maps:Map x:ConnectionId='1' Grid.Column="0"  Name="map" ShowNavigationBar="False" ShowTraffic="False"                             HorizontalAlignment="Left" Grid.RowSpan="99"  Grid.Row="1" Credentials="An7YFWgFf8yiMsYq3JyjFvxNIaqYKWzD2dra2JgZO8dVqPuSamWUPJbsdkckX2Gr" Height="700" Width="1000" VerticalAlignment="Top" />
+            <Maps:Map x:ConnectionId='1' Grid.Column="0" Credentials="{StaticResource ApiKey}" Name="map" ShowNavigationBar="False" ShowTraffic="False"                             HorizontalAlignment="Left" Grid.RowSpan="99"  Grid.Row="1" Height="700" Width="1000" VerticalAlignment="Top" />
             <RadioButton x:ConnectionId='2' IsChecked="True" Content="Street" Grid.Row="0" Grid.Column="1" GroupName="StyleGroup"                            />
             <RadioButton x:ConnectionId='3' Content="Satellite" Grid.Row="1" Grid.Column ="1" GroupName="StyleGroup"                            />
             <RadioButton x:ConnectionId='4' Content="Hybrid" Grid.Row="2" Grid.Column="1" GroupName="StyleGroup"                            />
             <ToggleSwitch x:ConnectionId='5' Grid.Column="1" Header="Show/Hide Traffic" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="283"                                  />
             <ToggleSwitch x:ConnectionId='6' Grid.Column="1" Header="Show Breadcrumb control" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top"                                 />
-            <Button x:ConnectionId='7' Content="Warp to My Loaction" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="283"                       />
+            <Button x:ConnectionId='7' Content="Warp to My Location" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="283"                       />
 
         </Grid>
         

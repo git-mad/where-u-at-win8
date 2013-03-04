@@ -124,79 +124,81 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
 
         private object Activate_1_HomePage() { return new global::WhereUAt.HomePage(); }
 
-        private object Activate_2_Map() { return new global::Bing.Maps.Map(); }
+        private object Activate_2_ListPage() { return new global::WhereUAt.ListPage(); }
 
-        private object Activate_3_MapUIElementCollection() { return new global::Bing.Maps.MapUIElementCollection(); }
+        private object Activate_3_Map() { return new global::Bing.Maps.Map(); }
 
-        private object Activate_8_MapTileLayerCollection() { return new global::Bing.Maps.MapTileLayerCollection(); }
+        private object Activate_4_MapUIElementCollection() { return new global::Bing.Maps.MapUIElementCollection(); }
 
-        private object Activate_9_MapTileLayer() { return new global::Bing.Maps.MapTileLayer(); }
+        private object Activate_9_MapTileLayerCollection() { return new global::Bing.Maps.MapTileLayerCollection(); }
 
-        private object Activate_10_LocationRectCollection() { return new global::Bing.Maps.LocationRectCollection(); }
+        private object Activate_10_MapTileLayer() { return new global::Bing.Maps.MapTileLayer(); }
 
-        private object Activate_11_LocationRect() { return new global::Bing.Maps.LocationRect(); }
+        private object Activate_11_LocationRectCollection() { return new global::Bing.Maps.LocationRectCollection(); }
 
-        private object Activate_12_Location() { return new global::Bing.Maps.Location(); }
+        private object Activate_12_LocationRect() { return new global::Bing.Maps.LocationRect(); }
 
-        private object Activate_13_MapShapeLayerCollection() { return new global::Bing.Maps.MapShapeLayerCollection(); }
+        private object Activate_13_Location() { return new global::Bing.Maps.Location(); }
 
-        private object Activate_14_MapShapeLayer() { return new global::Bing.Maps.MapShapeLayer(); }
+        private object Activate_14_MapShapeLayerCollection() { return new global::Bing.Maps.MapShapeLayerCollection(); }
 
-        private object Activate_15_MapShapeCollection() { return new global::Bing.Maps.MapShapeCollection(); }
+        private object Activate_15_MapShapeLayer() { return new global::Bing.Maps.MapShapeLayer(); }
 
-        private object Activate_20_ResultsPage() { return new global::WhereUAt.ResultsPage(); }
+        private object Activate_16_MapShapeCollection() { return new global::Bing.Maps.MapShapeCollection(); }
 
-        private object Activate_21_Pushpin() { return new global::Bing.Maps.Pushpin(); }
+        private object Activate_21_ResultsPage() { return new global::WhereUAt.ResultsPage(); }
 
-        private object Activate_22_MapItemsControl() { return new global::Bing.Maps.MapItemsControl(); }
+        private object Activate_22_Pushpin() { return new global::Bing.Maps.Pushpin(); }
 
-        private object Activate_23_VenueFloorDataSource() { return new global::Bing.Maps.VenueMaps.VenueFloorDataSource(); }
+        private object Activate_23_MapItemsControl() { return new global::Bing.Maps.MapItemsControl(); }
 
-        private object Activate_28_LocationCollection() { return new global::Bing.Maps.LocationCollection(); }
+        private object Activate_24_VenueFloorDataSource() { return new global::Bing.Maps.VenueMaps.VenueFloorDataSource(); }
 
-        private void VectorAdd_3_MapUIElementCollection(object instance, object item)
+        private object Activate_29_LocationCollection() { return new global::Bing.Maps.LocationCollection(); }
+
+        private void VectorAdd_4_MapUIElementCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.UIElement>)instance;
             var newItem = (global::Windows.UI.Xaml.UIElement)item;
             collection.Add(newItem);
         }
 
-        private void VectorAdd_8_MapTileLayerCollection(object instance, object item)
+        private void VectorAdd_9_MapTileLayerCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Bing.Maps.MapTileLayer>)instance;
             var newItem = (global::Bing.Maps.MapTileLayer)item;
             collection.Add(newItem);
         }
 
-        private void VectorAdd_10_LocationRectCollection(object instance, object item)
+        private void VectorAdd_11_LocationRectCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Bing.Maps.LocationRect>)instance;
             var newItem = (global::Bing.Maps.LocationRect)item;
             collection.Add(newItem);
         }
 
-        private void VectorAdd_13_MapShapeLayerCollection(object instance, object item)
+        private void VectorAdd_14_MapShapeLayerCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Bing.Maps.MapShapeLayer>)instance;
             var newItem = (global::Bing.Maps.MapShapeLayer)item;
             collection.Add(newItem);
         }
 
-        private void VectorAdd_15_MapShapeCollection(object instance, object item)
+        private void VectorAdd_16_MapShapeCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Bing.Maps.MapShape>)instance;
             var newItem = (global::Bing.Maps.MapShape)item;
             collection.Add(newItem);
         }
 
-        private void VectorAdd_24_IObservableVector(object instance, object item)
+        private void VectorAdd_25_IObservableVector(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
 
-        private void VectorAdd_28_LocationCollection(object instance, object item)
+        private void VectorAdd_29_LocationCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Bing.Maps.Location>)instance;
             var newItem = (global::Bing.Maps.Location)item;
@@ -231,12 +233,12 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
                 xamlType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.UIElement));
                 break;
 
-            case "Boolean":
-                xamlType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Boolean));
-                break;
-
             case "String":
                 xamlType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.String));
+                break;
+
+            case "Boolean":
+                xamlType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Boolean));
                 break;
 
             case "Windows.UI.Xaml.DependencyObject":
@@ -267,20 +269,26 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
                 xamlType = userType;
                 break;
 
+            case "WhereUAt.ListPage":
+                userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::WhereUAt.ListPage), GetXamlTypeByName("WhereUAt.Common.LayoutAwarePage"));
+                userType.Activator = Activate_2_ListPage;
+                xamlType = userType;
+                break;
+
             case "Bing.Maps.Map":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Map), GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_2_Map;
+                userType.Activator = Activate_3_Map;
                 userType.SetContentPropertyName("Bing.Maps.Map.Children");
                 userType.AddMemberName("Children");
+                userType.AddMemberName("Credentials");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
                 userType.AddMemberName("ShowNavigationBar");
                 AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
                                                    "Boolean");
                 userType.AddMemberName("ShowTraffic");
                 AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
                                                    "Boolean");
-                userType.AddMemberName("Credentials");
-                AddToMapOfTypeToStandardName(typeof(global::System.String),
-                                                   "String");
                 userType.AddMemberName("VenueManager");
                 userType.AddMemberName("LogoPosition");
                 userType.AddMemberName("CopyrightPosition");
@@ -342,8 +350,8 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
 
             case "Bing.Maps.MapUIElementCollection":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapUIElementCollection), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_3_MapUIElementCollection;
-                userType.CollectionAdd = VectorAdd_3_MapUIElementCollection;
+                userType.Activator = Activate_4_MapUIElementCollection;
+                userType.CollectionAdd = VectorAdd_4_MapUIElementCollection;
                 xamlType = userType;
                 break;
 
@@ -373,14 +381,14 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
 
             case "Bing.Maps.MapTileLayerCollection":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapTileLayerCollection), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_8_MapTileLayerCollection;
-                userType.CollectionAdd = VectorAdd_8_MapTileLayerCollection;
+                userType.Activator = Activate_9_MapTileLayerCollection;
+                userType.CollectionAdd = VectorAdd_9_MapTileLayerCollection;
                 xamlType = userType;
                 break;
 
             case "Bing.Maps.MapTileLayer":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapTileLayer), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_9_MapTileLayer;
+                userType.Activator = Activate_10_MapTileLayer;
                 userType.AddMemberName("Bounds");
                 userType.AddMemberName("FillMissingTiles");
                 AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
@@ -408,14 +416,14 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
 
             case "Bing.Maps.LocationRectCollection":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.LocationRectCollection), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_10_LocationRectCollection;
-                userType.CollectionAdd = VectorAdd_10_LocationRectCollection;
+                userType.Activator = Activate_11_LocationRectCollection;
+                userType.CollectionAdd = VectorAdd_11_LocationRectCollection;
                 xamlType = userType;
                 break;
 
             case "Bing.Maps.LocationRect":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.LocationRect), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_11_LocationRect;
+                userType.Activator = Activate_12_LocationRect;
                 userType.AddMemberName("West");
                 AddToMapOfTypeToStandardName(typeof(global::System.Double),
                                                    "Double");
@@ -442,7 +450,7 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
 
             case "Bing.Maps.Location":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Location), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_12_Location;
+                userType.Activator = Activate_13_Location;
                 userType.AddMemberName("Longitude");
                 AddToMapOfTypeToStandardName(typeof(global::System.Double),
                                                    "Double");
@@ -454,14 +462,14 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
 
             case "Bing.Maps.MapShapeLayerCollection":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapShapeLayerCollection), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_13_MapShapeLayerCollection;
-                userType.CollectionAdd = VectorAdd_13_MapShapeLayerCollection;
+                userType.Activator = Activate_14_MapShapeLayerCollection;
+                userType.CollectionAdd = VectorAdd_14_MapShapeLayerCollection;
                 xamlType = userType;
                 break;
 
             case "Bing.Maps.MapShapeLayer":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapShapeLayer), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_14_MapShapeLayer;
+                userType.Activator = Activate_15_MapShapeLayer;
                 userType.AddMemberName("Visible");
                 AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
                                                    "Boolean");
@@ -474,8 +482,8 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
 
             case "Bing.Maps.MapShapeCollection":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapShapeCollection), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_15_MapShapeCollection;
-                userType.CollectionAdd = VectorAdd_15_MapShapeCollection;
+                userType.Activator = Activate_16_MapShapeCollection;
+                userType.CollectionAdd = VectorAdd_16_MapShapeCollection;
                 xamlType = userType;
                 break;
 
@@ -516,13 +524,13 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
 
             case "WhereUAt.ResultsPage":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::WhereUAt.ResultsPage), GetXamlTypeByName("WhereUAt.Common.LayoutAwarePage"));
-                userType.Activator = Activate_20_ResultsPage;
+                userType.Activator = Activate_21_ResultsPage;
                 xamlType = userType;
                 break;
 
             case "Bing.Maps.Pushpin":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Pushpin), GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_21_Pushpin;
+                userType.Activator = Activate_22_Pushpin;
                 userType.AddMemberName("Text");
                 AddToMapOfTypeToStandardName(typeof(global::System.String),
                                                    "String");
@@ -532,14 +540,14 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
 
             case "Bing.Maps.MapItemsControl":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapItemsControl), GetXamlTypeByName("Windows.UI.Xaml.Controls.ItemsControl"));
-                userType.Activator = Activate_22_MapItemsControl;
+                userType.Activator = Activate_23_MapItemsControl;
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
             case "Bing.Maps.VenueMaps.VenueFloorDataSource":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.VenueMaps.VenueFloorDataSource), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_23_VenueFloorDataSource;
+                userType.Activator = Activate_24_VenueFloorDataSource;
                 userType.AddMemberName("Items");
                 AddToMapOfTypeToStandardName(typeof(global::Windows.Foundation.Collections.IObservableVector<global::System.Object>),
                                                    "Windows.Foundation.Collections.IObservableVector<Object>");
@@ -554,7 +562,7 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Windows.Foundation.Collections.IObservableVector<global::System.Object>), null);
                 AddToMapOfTypeToStandardName(typeof(global::Windows.Foundation.Collections.IObservableVector<global::System.Object>),
                                                    "Windows.Foundation.Collections.IObservableVector<Object>");
-                userType.CollectionAdd = VectorAdd_24_IObservableVector;
+                userType.CollectionAdd = VectorAdd_25_IObservableVector;
                 xamlType = userType;
                 break;
 
@@ -645,8 +653,8 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
 
             case "Bing.Maps.LocationCollection":
                 userType = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.LocationCollection), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_28_LocationCollection;
-                userType.CollectionAdd = VectorAdd_28_LocationCollection;
+                userType.Activator = Activate_29_LocationCollection;
+                userType.CollectionAdd = VectorAdd_29_LocationCollection;
                 xamlType = userType;
                 break;
 
@@ -718,35 +726,35 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
             var that = (global::Bing.Maps.Map)instance;
             return that.Children;
         }
-        private object get_1_Map_ShowNavigationBar(object instance)
-        {
-            var that = (global::Bing.Maps.Map)instance;
-            return that.ShowNavigationBar;
-        }
-        private void set_1_Map_ShowNavigationBar(object instance, object Value)
-        {
-            var that = (global::Bing.Maps.Map)instance;
-            that.ShowNavigationBar = (global::System.Boolean)Value;
-        }
-        private object get_2_Map_ShowTraffic(object instance)
-        {
-            var that = (global::Bing.Maps.Map)instance;
-            return that.ShowTraffic;
-        }
-        private void set_2_Map_ShowTraffic(object instance, object Value)
-        {
-            var that = (global::Bing.Maps.Map)instance;
-            that.ShowTraffic = (global::System.Boolean)Value;
-        }
-        private object get_3_Map_Credentials(object instance)
+        private object get_1_Map_Credentials(object instance)
         {
             var that = (global::Bing.Maps.Map)instance;
             return that.Credentials;
         }
-        private void set_3_Map_Credentials(object instance, object Value)
+        private void set_1_Map_Credentials(object instance, object Value)
         {
             var that = (global::Bing.Maps.Map)instance;
             that.Credentials = (global::System.String)Value;
+        }
+        private object get_2_Map_ShowNavigationBar(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.ShowNavigationBar;
+        }
+        private void set_2_Map_ShowNavigationBar(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.ShowNavigationBar = (global::System.Boolean)Value;
+        }
+        private object get_3_Map_ShowTraffic(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.ShowTraffic;
+        }
+        private void set_3_Map_ShowTraffic(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.ShowTraffic = (global::System.Boolean)Value;
         }
         private object get_4_Map_VenueManager(object instance)
         {
@@ -1307,23 +1315,23 @@ namespace WhereUAt.WhereUAt_XamlTypeInfo
                 xamlMember.Getter = get_0_Map_Children;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "Bing.Maps.Map.Credentials":
+                userType = (global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlMember(this, "Credentials", "String");
+                xamlMember.Getter = get_1_Map_Credentials;
+                xamlMember.Setter = set_1_Map_Credentials;
+                break;
             case "Bing.Maps.Map.ShowNavigationBar":
                 userType = (global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
                 xamlMember = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlMember(this, "ShowNavigationBar", "Boolean");
-                xamlMember.Getter = get_1_Map_ShowNavigationBar;
-                xamlMember.Setter = set_1_Map_ShowNavigationBar;
+                xamlMember.Getter = get_2_Map_ShowNavigationBar;
+                xamlMember.Setter = set_2_Map_ShowNavigationBar;
                 break;
             case "Bing.Maps.Map.ShowTraffic":
                 userType = (global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
                 xamlMember = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlMember(this, "ShowTraffic", "Boolean");
-                xamlMember.Getter = get_2_Map_ShowTraffic;
-                xamlMember.Setter = set_2_Map_ShowTraffic;
-                break;
-            case "Bing.Maps.Map.Credentials":
-                userType = (global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
-                xamlMember = new global::WhereUAt.WhereUAt_XamlTypeInfo.XamlMember(this, "Credentials", "String");
-                xamlMember.Getter = get_3_Map_Credentials;
-                xamlMember.Setter = set_3_Map_Credentials;
+                xamlMember.Getter = get_3_Map_ShowTraffic;
+                xamlMember.Setter = set_3_Map_ShowTraffic;
                 break;
             case "Bing.Maps.Map.VenueManager":
                 userType = (global::WhereUAt.WhereUAt_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");

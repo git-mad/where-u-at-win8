@@ -33,7 +33,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:ConnectionId='2' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
+            <Button x:ConnectionId='3' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}"/>
         </Grid>
         <Grid Margin="68,107,-69,33" Grid.RowSpan="2">
@@ -45,6 +45,7 @@
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="1" Name="locationBlock" FontSize="48"/>
             <Button x:ConnectionId='1' Grid.Row="1" Content="Find Me "                        Margin="0,10,0,2" Width="331"/>
+            <Button x:ConnectionId='2' Content="ListViewExample" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="2" VerticalAlignment="Top" Height="35" Width="331"                       />
         </Grid>
         <VisualStateManager.VisualStateGroups>
 

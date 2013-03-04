@@ -83,13 +83,13 @@
             </Grid.ColumnDefinitions>
             <TextBlock x:Name="resultsBlock" Grid.RowSpan="2" HorizontalAlignment="Left"  Grid.Row="0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"  FontSize="48"/>
 
-            <Maps:Map Grid.Column="0"  Name="map" ShowNavigationBar="False" ShowTraffic="False" Tapped="map_DoubleTapped_1" HorizontalAlignment="Left" Grid.RowSpan="99"  Grid.Row="1" Credentials="An7YFWgFf8yiMsYq3JyjFvxNIaqYKWzD2dra2JgZO8dVqPuSamWUPJbsdkckX2Gr" Height="700" Width="1000" VerticalAlignment="Top" />
+            <Maps:Map Grid.Column="0" Credentials="{StaticResource ApiKey}" Name="map" ShowNavigationBar="False" ShowTraffic="False" Tapped="map_DoubleTapped_1" HorizontalAlignment="Left" Grid.RowSpan="99"  Grid.Row="1" Height="700" Width="1000" VerticalAlignment="Top" />
             <RadioButton IsChecked="True" Content="Street" Grid.Row="0" Grid.Column="1" GroupName="StyleGroup" Click="RadioButton_Click_1"/>
             <RadioButton Content="Satellite" Grid.Row="1" Grid.Column ="1" GroupName="StyleGroup" Click="RadioButton_Click_1"/>
             <RadioButton Content="Hybrid" Grid.Row="2" Grid.Column="1" GroupName="StyleGroup" Click="RadioButton_Click_1"/>
             <ToggleSwitch Grid.Column="1" Header="Show/Hide Traffic" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="283" Toggled="ToggleSwitch_Toggled_1" />
             <ToggleSwitch Grid.Column="1" Header="Show Breadcrumb control" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Toggled="ToggleSwitch_Toggled_2"/>
-            <Button Content="Warp to My Loaction" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="283" Click="Button_Click_1"/>
+            <Button Content="Warp to My Location" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="283" Click="Button_Click_1"/>
 
         </Grid>
         

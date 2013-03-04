@@ -27,3 +27,10 @@ C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\obj\x86\Deb
 C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\obj\x86\Debug\pri.resfiles
 C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\obj\x86\Debug\LanguageQualifiers.txt
 C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\obj\x86\Debug\ListPage.g.i.cs
+C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\obj\x86\Debug\ListPage.g.cs
+C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\obj\x86\Debug\ListPage.xaml
+C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\obj\x86\Debug\layout.resfiles.intermediate
+C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\Alex\SkyDrive\Visual Studio 2012\Projects\WhereUAt\WhereUAt\obj\x86\Debug\pri.resfiles.intermediate
